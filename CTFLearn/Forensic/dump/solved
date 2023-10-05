@@ -1,0 +1,2 @@
+- Just in case easily by using strings to find that kind and remove some space to connect them all, get the flag by
+`strings file | grep 'CTF' -A 10 | xargs | tr -d ' '`

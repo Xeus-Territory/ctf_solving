@@ -1,0 +1,3 @@
+- It require 2 step to find the image, first extract all binary have assigned into purple image by
+`binwalk --dd='.*' <image>`
+- Next step it whole all the binary file but u can vill metadata of them and know that png image. Change tail of binary file into png and you got flag

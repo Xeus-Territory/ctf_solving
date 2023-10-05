@@ -1,0 +1,2 @@
+- Quite easy just binwalk for first time extract the zip inside, but you need to use exiftool or type to understand where is zip file
+- After detect, unzip it and go to deepest, just strings on the image for file the flag - Don't make this became hardthing by change hex

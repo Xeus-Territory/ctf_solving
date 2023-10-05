@@ -1,0 +1,2 @@
+- just in case, for using the wireshark - perfect tool. So you need to analyze HTTP because it can be plaintext to read for first.
+- Have strange api GET with msg=<base64> get values of it and try to decode them, so you can get the flag.
