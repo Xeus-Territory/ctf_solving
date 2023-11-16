@@ -1,0 +1,63 @@
+<p><code>from urllib import request
+</code><br>
+<code>from flask import Flask, render_template, render_template_string, request
+</code><br>
+<code>from builtins import open as _, eval as _a
+</code><br>
+<code>from unicodedata import normalize as _b
+</code><br>
+<code>from re import search as _e
+</code><br>
+<code>
+</code><br>
+<code>app = Flask(__name__)
+</code><br>
+<code>
+</code><br>
+<code>def check_regex(pattern):
+</code><br>
+<code>&emsp; if _e("[\\101-\\132\\141-\\172]", pattern):
+</code><br>
+<code>&emsp;&emsp; return False
+</code><br>
+<code> &emsp; else:
+</code><br>
+<code>&emsp;&emsp; return True
+</code><br>
+<code>
+</code><br>
+<code>@app.route('/')
+</code><br>
+<code>def index():
+</code><br>
+<code>&emsp; return render_template('index.html')
+</code><br>
+<code>
+</code><br>
+<code>@app.route('/server.py')
+</code><br>
+<code>def viewpath():
+</code><br>
+<code>&emsp; return render_template('source.html')
+</code><br>
+<code>
+</code><br>
+<code>@app.route('/payload')
+</code><br>
+<code>def get_flag():
+</code><br>
+<code>&emsp; try:
+</code><br>
+<code> &emsp;&emsp; if _e("[\\101-\\132\\141-\\172]", __ := _b("\116\106\113\104",request.args.get('cmd'))):
+</code><br>
+<code>&emsp;&emsp;&emsp; return "/\/[]â€  13@|) ÃŸL|â€  \|/Ð¯Â°/\/6"
+</code><br>
+<code>&emsp;&emsp; return _a(__)
+</code><br>
+<code>&emsp; except:
+</code><br>
+<code>&emsp;&emsp; return "/\/[]â€  13@|) ÃŸL|â€  \|/Ð¯Â°/\/6"
+</code><br>
+<code>
+</code><br>
+<code>app.run()</code><br></p>

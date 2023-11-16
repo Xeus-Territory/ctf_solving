@@ -1,0 +1,8 @@
+ancient civilization, do you solve that?
+
+description: we have to hear some strage voice but not know anything,
+i think it will be mine destiny do you grab it for me, your ancient man ?
+
+attach: https://drive.google.com/file/d/1LICGuMgokDXwqiRuU3gLsn3c1ixYvozV/view?usp=sharing
+
+flag_format: em0t3t{flex_blah_bloh} 

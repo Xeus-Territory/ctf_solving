@@ -1,0 +1,47 @@
+<html>
+	<!-- Em0t3t club -->
+	<!-- Author: fb/MINHPHU.IT -->
+  <head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+    <title>I learn to code with Flask !!!</title>
+		<style>
+			p {
+				text-align: center;
+			}
+			div {
+				text-align: center;
+			}
+    </style>
+  </head>
+  <body style="background-color:#4b9e4c;">
+
+	<div class="font-effect-shadow-multiple" style="font-size: 70px; font-family: 'Rancho';">My TOP_TOP Idol!!!</div>
+
+	<br>
+	
+	<div class="container">
+
+		<form action="" method="post" >
+			<input type="text" placeholder="TitoK ID" name="titok_id">
+			<input type="submit" value="Search">
+		</form>
+				
+				
+		{% if error %}
+			<div><p class="error"><strong> {{ error }} </strong></div>
+		{% endif %}
+
+
+		<img src="../static/images/icon.png" alt = "titok-icon" height= "50" width = "50">
+		<img src="../static/images/icon.png" alt = "titok-icon" height= "50" width = "50">
+		<img src="../static/images/icon.png" alt = "titok-icon" height= "50" width = "50">
+	</div>
+
+	{% if titokID %}
+		<blockquote class="tiktok-embed" data-unique-id="{{titokID}}" data-embed-type="creator" style="max-width: 720px; min-width: 288px;" > <section></section> </blockquote> 
+	{% endif %}
+
+	<script async src="https://www.tiktok.com/embed.js"></script>
+
+  </body>
+</html>

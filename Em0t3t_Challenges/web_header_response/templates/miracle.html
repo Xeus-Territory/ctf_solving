@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div hidden id="dialog" title="Basic dialog" style="position:absolute; right: 20rem">
+        <img src="https://thumbs.dreamstime.com/b/cookies-17726468.jpg" width = 500 heigh = 500 alt="Placeholder Image" />
+      
+      </div>
+    <h1> You find the MysteryBox, your gift is <button id = "button_hidden" onclick="alertImg()">????</button></h1>
+</body>
+<script>
+    function alertImg() 
+    {
+        document.getElementById("dialog").hidden = false;
+        document.getElementById("button_hidden").hidden = true;
+    }
+</script>
+</html>

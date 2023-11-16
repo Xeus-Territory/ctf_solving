@@ -1,0 +1,7 @@
+get anything with x0r?
+
+description: take a easy you keep to look it but it basicly em0t3t. Do you play x0r with that?
+
+attach: https://drive.google.com/file/d/1mm1z9Y0P5Pc4GL7YaifmNR7gzyH8X0yQ/view?usp=sharing
+
+flag_format : em0t3t{fake_flag}
