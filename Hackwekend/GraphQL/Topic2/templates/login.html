@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="social-icons">
+                <img src="../static/images/fb.png" alt="fb">
+                <img src="../static/images/tw.png" alt="tw">
+                <img src="../static/images/gp.png"" alt="gp">
+            </div>
+            <h2>GET THE GATCHA BEHIND THE SCENE</h2>
+            <form id="login" class="input-group" action={{ url_for("handle_login") }} method="POST">
+                <input name="username" type="text" class="input-field" placeholder="Enter Name" required>
+                <input name="password" type="password" class="input-field" placeholder="Enter Password" required>
+                {% if message != "" %}
+                    <strong style="text-align: center; color: #ff105f; font-family: 'Raleway',sans-serif; font-size: 15px;">{{ message }}</strong>
+                {% endif %}
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+        </div>
+    </div>
+    <script src="../static/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+flask
+ariadne
+uvicorn
+python-dotenv
+tinydb
+requests
