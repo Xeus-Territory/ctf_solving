@@ -1,0 +1,4 @@
+- Just the easily use the stegsolve.jar and focus on the top on the image in the red image
+with strange pixel
+- Export this into the image and use zsteg, on the first lsb in zsteg you can find the flag
+- Flag: ASCIS{w3ll_d0n3_st3g0_1s_fun}
